@@ -26,12 +26,20 @@ ul{
     color: #747474;
 }
 
+.font-size-10{
+    font-size: 10px;
+}
+
 .font-size-11{
     font-size: 11px;
 }
 
 .font-size-13{
     font-size: 13px;
+}
+
+.align-items{
+    align-items: center;
 }
 
 /* sidebar */
@@ -54,20 +62,17 @@ ul{
 .col-sidebar{
     height: 100%;
     flex-direction: column;
-    align-items: center;
     margin-top: 0.2rem;
 }
 
 .sidebar-top{
     flex-direction: column;
-    align-items: center;
 }
 
 .sidebar-bottom{
     height: 100%;
     justify-content: flex-end;
     flex-direction: column;
-    align-items: center;
 }
 
 #margin-top-5rem{
@@ -108,7 +113,6 @@ ul{
 /* container header and main */
 
 .container{
-    background-color: blue;
     width: calc(100vw - 35px);
     height: calc(100vh - 70px);
 }
@@ -117,15 +121,29 @@ ul{
 
 .container-header{
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 80px;
+    width: calc(100vw - 35px);
+    height: 70px;
     position: fixed;
+}
+
+.row-header{
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.col-header{
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-right: 0.2rem;
 }
 
 /* mian */
 
 .container-main{
-    background-color: brown;
+    background-color: #141922;
     width: 100%;
     height: 100%;
     overflow: scroll;
@@ -134,10 +152,44 @@ ul{
 /* footer */
 
 .container-footer{
-    background-color: blueviolet;
+    background-color: #282828;
     width: 100vw;
     height: 70px;
 }
+
+.row-footer{
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.col-footer-left{
+    width: 20%;
+}
+
+.line-height{
+    line-height: 8px;
+    margin-left: 0.6rem;
+}
+
+.col-footer-mid{
+    width: 40%;
+}
+
+.col-footer-right{
+    width: 20%;
+}
+
+.col-footer-left img{
+    max-height: 1.5rem;
+}
+
+.icons{
+    margin-left: 1.2rem;
+    word-spacing: 0.6rem;
+    line-height: 0.9rem;
+}
+
 
 /* media mobile first */
 
@@ -226,5 +278,23 @@ ul{
     .container{
         width: calc(100vw - 200px);
         height: calc(100vh - 70px);
+    }
+
+    /* header */
+    
+    .container-header{
+        width: calc(100vw - 200px)
+    }
+
+    /* footer */
+
+    .col-footer-left img{
+        max-height: 2.2rem;
+    }
+
+    .icons{
+        margin-left: 1.8rem;
+        word-spacing: 0.6rem;
+        line-height: 0.9rem;
     }
 }
