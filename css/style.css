@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .flex{
     display: flex;
 }
 
 /* utily */
+
+.text-center{
+    text-align: center
+}
+
+.font-weight{
+    font-weight: 600;
+}
 
 a{
     text-decoration: none;
@@ -67,6 +79,14 @@ ul{
 
 .sidebar-top{
     flex-direction: column;
+}
+
+.sidebar-middle{
+    margin-top: 0.5rem;
+}
+
+.sidebar-middle h4{
+    margin-top: 0.7rem;
 }
 
 .sidebar-bottom{
@@ -149,6 +169,74 @@ ul{
     overflow: scroll;
 }
 
+.row-nav{
+    margin-top: 5rem;
+    width: 100%;
+    margin: 5rem auto 0;
+}
+
+.col-nav{
+    width: 100%;
+}
+
+.nav-main{
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-main ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-main ul li{
+    font-weight: 600;
+    width: calc(100% / 4);
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+.row-main{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.col-top-main h1, .col-mid-main p, .col-bottom-main p{
+    margin-bottom: 2rem;
+}
+
+.col-mid-main h1, .col-bottom-main h1{
+    margin-bottom: 0.5rem;
+}
+
+h1{
+    font-size: 26px;
+}
+
+.text-center h5{
+    margin-top: 0.8rem;
+}
+
+.container-music{
+    flex-wrap: wrap;
+}
+
+.box-music{
+    width: calc(100% / 2 - 10px);
+    height: 100%;
+    margin-right: 10px ;
+    margin-bottom: 1rem;
+}
+
+.box-music img{
+    width: 100%;
+    height: 100%;
+}
+
+.border-radius{
+    border-radius: 100%;
+}
+
 /* footer */
 
 .container-footer{
@@ -225,7 +313,7 @@ ul{
 
 /* media mobile first */
 
-@media screen and (min-width: 577px){
+@media screen and (min-width: 576px){
     /* sidebar */
 
     .container-sidebar{
@@ -318,6 +406,12 @@ ul{
         width: calc(100vw - 200px)
     }
 
+    /* main */
+
+    .nav-main ul li{
+        width: calc(100% / 3);
+    }
+
     /* footer */
 
     .col-footer-left img{
@@ -328,5 +422,40 @@ ul{
         margin-left: 1.8rem;
         word-spacing: 0.6rem;
         line-height: 0.9rem;
+    }
+}
+
+/* solo main */
+
+@media screen and (min-width: 640px){
+    /* main */
+    .nav-main ul li{
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (min-width: 690px){
+    /* main */
+    .nav-main ul li{
+        width: calc(100% / 5);
+    }
+
+    .box-music{
+        width: calc(100% / 4 - 10px);
+    }
+}
+
+@media screen and (min-width: 768px){
+    /* main */
+    .nav-main ul{
+        width: 600px;
+    }
+
+    .nav-main ul li{
+        width: calc(100% / 6);
+    }
+
+    .box-music{
+        width: calc(100% / 6 - 10px);
     }
 }
