@@ -23,20 +23,20 @@
                             </div>
                             <div id="margin-top-5rem" class="logo-xs font-size-13">
                                 <img src="./img/home.svg" alt="logo-home">
-                                <span class="hide-in text-white">
-                                    Home 
+                                <span class="hide-in">
+                                    <a class="text-white" href="#">Home </a> 
                                 </span>
                             </div>
                             <div class="logo-xs text-grey font-size-13">
                                 <img src="./img/search.svg" alt="logo-search">
                                 <span class="hide-in">
-                                    Cerca
+                                    <a class="text-grey" href="#">Cerca</a> 
                                 </span>
                             </div>
                             <div class="logo-xs text-grey font-size-13">
                                 <img src="./img/libreria.svg" alt="logo-library">
                                 <span class="hide-in">
-                                    La tua libreria
+                                    <a class="text-grey" href="#">La tua libreria</a> 
                                 </span>
                             </div>
                         </div>
@@ -44,14 +44,14 @@
                             <h4 class="text-white">PLAYLIST</h4>
                             <a class="bg-fn" href="#">&#10010;</a><span class="text-grey">Crea Playlist</span>
                             <div class="ulist">
-                                <ul class="text-grey font-size-11">
-                                    <li>Nuova Playlist</li>
-                                    <li>Nuova Playlist</li>
-                                    <li>Nuova Playlist</li>
-                                    <li>Nuova Playlist</li>
-                                    <li>Nuova Playlist</li>
-                                    <li>Nuova Playlist</li>
-                                    <li>Nuova Playlist</li>
+                                <ul class="font-size-11">
+                                    <li><a class="text-grey" href="#">Nuova Playlist</a></li>
+                                    <li><a class="text-grey" href="#">Nuova Playlist</a></li>
+                                    <li><a class="text-grey" href="#">Nuova Playlist</a></li>
+                                    <li><a class="text-grey" href="#">Nuova Playlist</a></li>
+                                    <li><a class="text-grey" href="#">Nuova Playlist</a></li>
+                                    <li><a class="text-grey" href="#">Nuova Playlist</a></li>
+                                    <li><a class="text-grey" href="#">Nuova Playlist</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -77,8 +77,8 @@
                 <!-- HEADER -->            
                 <div class="container-header">
                     <div class="row-header flex align-items">
-                        <div class="col-header text-white font-size-13">
-                            <span>EFFETUA L'UPGRADE</span>
+                        <div class="col-header font-size-13">
+                            <span><a class="text-white" href="#">EFFETUA L'UPGRADE</a></span>
                         </div>
                     </div>
                 </div>
@@ -103,18 +103,31 @@
                     </div>
                 </div>
                 <div class="col-footer-mid flex align-items">
-                    <div class="icons-mid">
-                        <i class="fa-solid fa-shuffle"></i>
-                        <i class="fa-solid fa-backward-step"></i>
-                        <i class="fa-regular fa-circle-play"></i>
-                        <i class="fa-solid fa-forward-step"></i>    
-                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    <div class="icons-mid text-white flex align-items">
+                        <i class="font-size-13 fa-solid fa-shuffle"></i>
+                        <i class="font-size-13 fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play" style="font-size: 22px;"></i>
+                        <i class="font-size-13 fa-solid fa-forward-step"></i>    
+                        <i class="font-size-13 fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+                    <div class="slider-container flex align-items text-white font-size-10">
+                        <span>0:25</span>
+                        <input class="slider-mid" type="range" min="0" max="100" value="50">
+                        <span>0:45</span>
+                    </div>
+                    <div>
+                        
                     </div>
                 </div>
                 <div class="col-footer-right flex align-items">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-desktop"></i>
-                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="icons-right flex font-size-11 text-white">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-desktop"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="slider-container-right">
+                        <input class="slider-right" type="range" min="0" max="100" value="50">
+                    </div>
                 </div>
             </div>
         </div>
