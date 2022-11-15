@@ -79,7 +79,7 @@ ul{
 .col-sidebar{
     height: 100%;
     flex-direction: column;
-    overflow: auto;
+    overflow: hidden;
     margin-top: 0.2rem;
 }
 
@@ -150,7 +150,7 @@ ul{
     width: calc(100vw - 35px);
     height: 70px;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
 }
 
 .row-header{
@@ -295,7 +295,7 @@ h1{
     width: 100vw;
     height: 70px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .row-footer{
@@ -450,8 +450,14 @@ h1{
         vertical-align: middle;
     }
 
-    .ulist, .ulist li{
+    .ulist li{
         margin: 1rem 0;
+    }
+
+    .ulist{
+        overflow: auto;
+        height: 38vh;
+        margin: 0.2rem 0;
     }
 
     .hide-block{
