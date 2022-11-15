@@ -334,9 +334,39 @@ h1{
     justify-content: space-around;
 }
 
-.slider-mid{
+.slide-bar{
     width: 60%;
     height: 5px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.time-played{
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    position: relative;
+}
+
+.slide-bar:hover .time-played{
+    background-color: greenyellow;
+}
+
+.point-bar{
+    display: none;
+}
+
+.slide-bar:hover .point-bar{
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    right: 0;
+    width: 13px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-35%);
 }
 
 .time{
@@ -353,17 +383,12 @@ h1{
 }
 
 .icons-right{
-    width: 4.5rem;
+    width: 30%;
     justify-content: space-around;
 }
 
-.slider-container-right{
-    width: 50%;
-}
-
-.slider-right{
-    width: 100%;
-    height: 5px;
+.col-footer-right .slide-bar{
+    width: 40%;
 }
 
 .col-footer-left img{
